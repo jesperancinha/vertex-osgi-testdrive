@@ -12,7 +12,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>3.0.0</version>
+            <version>3.5.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -42,8 +42,7 @@
                         </goals>
                         <configuration>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
                                         <Main-Class>io.vertx.core.Starter</Main-Class>
                                         <Main-Verticle>com.steelzack.vertex.FinanceVerticle</Main-Verticle>
